@@ -1,0 +1,5 @@
+python-netsnmpagent (0.6.0-1) experimental; urgency=medium
+
+  * Initial release (Closes: #932925)
+
+ -- William Grzybowski <william@grzy.org>  Wed, 24 Jul 2019 16:45:41 -0300

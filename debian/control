@@ -1,0 +1,23 @@
+Source: python-netsnmpagent
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <team+python-modules@tracker.debian.org>
+Uploaders: William Grzybowski <william@grzy.org>
+Build-Depends: debhelper-compat (= 12),
+               dh-python,
+               python3-all,
+               python3-setuptools
+Standards-Version: 4.4.0
+Homepage: https://github.com/pief/python-netsnmpagent
+Vcs-Browser: https://salsa.debian.org/python-team/modules/python-netsnmpagent
+Vcs-Git: https://salsa.debian.org/python-team/modules/python-netsnmpagent.git
+Testsuite: autopkgtest-pkg-python
+
+Package: python3-netsnmpagent
+Architecture: all
+Depends: libsnmp30, ${misc:Depends}, ${python3:Depends}
+Description: Allows one to write net-snmp subagents in Python
+ python-netsnmpagent is a Python module that facilitates writing Net-SNMP
+ subagents in Python. Subagents connect to a locally running Master agent
+ (snmpd) over a Unix domain socket (eg. "/var/run/agentx/master") and using
+ the AgentX protocol (RFC2741).

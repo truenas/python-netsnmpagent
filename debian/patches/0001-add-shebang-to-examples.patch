@@ -1,0 +1,40 @@
+From: William Grzybowski <william@grzy.org>
+Date: Wed, 24 Jul 2019 16:59:21 -0300
+Subject: add shebang to examples
+
+---
+ examples/run_simple_agent.sh                | 2 +-
+ examples/run_simple_agent_over_tcpsocket.sh | 2 +-
+ examples/run_threading_agent.sh             | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/examples/run_simple_agent.sh b/examples/run_simple_agent.sh
+index 16fe4ab..509db90 100755
+--- a/examples/run_simple_agent.sh
++++ b/examples/run_simple_agent.sh
+@@ -1,4 +1,4 @@
+-#
++#!/bin/bash
+ # python-netsnmpagent simple example agent
+ #
+ # Copyright (c) 2013-2016 Pieter Hollants <pieter@hollants.com>
+diff --git a/examples/run_simple_agent_over_tcpsocket.sh b/examples/run_simple_agent_over_tcpsocket.sh
+index dfd93c0..39325b2 100755
+--- a/examples/run_simple_agent_over_tcpsocket.sh
++++ b/examples/run_simple_agent_over_tcpsocket.sh
+@@ -1,4 +1,4 @@
+-#
++#!/bin/bash
+ # python-netsnmpagent simple example agent
+ #
+ # Copyright (c) 2013-2016 Pieter Hollants <pieter@hollants.com>
+diff --git a/examples/run_threading_agent.sh b/examples/run_threading_agent.sh
+index 2e9d8d5..c1efa8b 100755
+--- a/examples/run_threading_agent.sh
++++ b/examples/run_threading_agent.sh
+@@ -1,4 +1,4 @@
+-#
++#!/bin/bash
+ # python-netsnmpagent example agent with threading
+ #
+ # Copyright (c) 2013-2016 Pieter Hollants <pieter@hollants.com>
