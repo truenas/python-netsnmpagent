@@ -15,7 +15,7 @@ Testsuite: autopkgtest-pkg-python
 
 Package: python3-netsnmpagent
 Architecture: all
-Depends: libsnmp30, ${misc:Depends}, ${python3:Depends}
+Depends: libsnmp35, ${misc:Depends}, ${python3:Depends}
 Description: Allows one to write net-snmp subagents in Python
  python-netsnmpagent is a Python module that facilitates writing Net-SNMP
  subagents in Python. Subagents connect to a locally running Master agent
