@@ -330,7 +330,7 @@ class netsnmpAgent(object):
 		]:
 			# Parse the argument specification for the class's __init__ method
 			# to get its default for "initval"
-			argspec = inspect.getargspec(vartype_cls.__init__)
+			argspec = inspect.getfullargspec(vartype_cls.__init__)
 			default_initval = argspec[3][list(filter(lambda e: e != "self", argspec[0])).index("initval")]
 
 			# Make class wrapper method available in our netsnmpAgent
