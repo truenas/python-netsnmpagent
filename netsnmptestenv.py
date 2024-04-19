@@ -158,7 +158,7 @@ class netsnmpTestEnv(object):
 		# SLES11 SP2's Python 2.6 has a subprocess module whose
 		# CalledProcessError exception does not yet know the third "output"
 		# argument, so we monkey-patch support into it
-		if len(inspect.getargspec(subprocess.CalledProcessError.__init__).args) == 3:
+		if len(inspect.getfullargspec(subprocess.CalledProcessError.__init__).args) == 3:
 			def new_init(self, returncode, cmd, output=None):
 				self.returncode = returncode
 				self.cmd        = cmd
